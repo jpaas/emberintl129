@@ -1,0 +1,10 @@
+<div style="float: left;">
+  <ul>
+    {{#each model as |item|}}
+        <li><a {{action 'select' item}} href="#">{{item.name}}</a></li>
+    {{/each}}
+  </ul>
+</div>
+<div style="float: left;">
+  {{outlet 'detail'}}
+</div>
